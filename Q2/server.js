@@ -4,11 +4,19 @@
 import express from 'express';
 import fs from 'fs';
 import path from 'path';
+import cors from 'cors';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
 const app = express();
 const PORT = 8080;
+
+// Use 'cors' middleware to allow requests from http://localhost:3000
+app.use(cors({
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+}));
 
 // Function to convert flat array to tree
 function buildCategoryTree(categories) {
