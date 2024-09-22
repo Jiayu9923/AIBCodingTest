@@ -67,7 +67,7 @@ const url = readline.createInterface({
 });
 
 // Let the user enter URL
-url.question('Enter ERL (For example：https://www.aibuild.com): ', async (inputUrl) => {
+url.question('Enter URL (For example：https://www.aibuild.com): ', async (inputUrl) => {
     const status = await checkConnectionCondition(inputUrl.trim());
     console.log(`Internet connection status: ${status}`);
     url.close();
