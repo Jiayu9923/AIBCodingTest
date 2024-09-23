@@ -41,6 +41,28 @@ Or you can check it through Postman.
 
 ## Question 3
 
+```
+category-tree-select/
+├── node_modules/
+├── public/
+├── src/
+│   ├── components/
+│   │   └── TreeSelectComponent.js
+│   ├── hooks/
+│   │   └── useFetchCategories.js
+│   ├── store/
+│   │   ├── actions.js
+│   │   ├── actionTypes.js
+│   │   ├── reducers.js
+│   │   ├── sagas.js
+│   │   └── store.js
+│   ├── App.js
+│   └── index.js
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
 Open one terminal to run the server in Q2:
 ```
 cd ../Q2
